@@ -1,4 +1,12 @@
+
 class Carrito{
+    constructor(img, title, price, id){
+        this.img = img
+        this.title = title
+        this.price = price
+        this.id = id
+    }
+
     comprarProducto(p) {
         p.preventDefault();
         if(p.target.classList.contains('agregarCarrito')){
@@ -48,56 +56,25 @@ class Carrito{
     }
 }
 
+let productoA = new Carrito ("https://estaticos.marie-claire.es/media/cache/350x_thumb/uploads/images/gallery/598d69595cafe8394de202fd/987.jpg","Las mil y una noches", "$780", 7)
+let productoB = new Carrito ("https://images-na.ssl-images-amazon.com/images/I/61GueyP-2QL.jpg","Hola Mundo", "$680", 8)
+let productoC = new Carrito ("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/1984-1524221166.jpg?crop=1xw:1xh;center,top&resize=480:*","1984", "$569", 9)
 
-
-
-
-
-
-
-
-
-
-
-/*let buttonCard = document.querySelectorAll(".addToCart")
-buttonCard.forEach(addButton => {
-    addButton.addEventListener("click",haceClick)
-});
-
-const conteinerCol = document.querySelector(".conteinerCol")
-
-function haceClick(event){
-    const buttonComplete = event.target;
-    const card = buttonComplete.closest(".card");
-    const cardTitle = card.querySelector(".card-title").textContent;
-    console.log(cardTitle)
-    const cardPrice = card.querySelector(".card-price").textContent;
-    console.log(cardPrice)
-    const cardImg = card.querySelector(".card-img").src;
-    console.log(cardImg)
-    addShopping(cardTitle,cardPrice,cardImg)
-}
-function addShopping(cardTitle,cardPrice,cardImg){
-    const shoppingCard = document.createElement('div');
-    const visual =
-    `<div class="row row-cols-1 row-cols-md-3 g-4 conteinerCol">
-        <div class="col">
-        <div class="card h-100">
-            <img src= ${cardImg} class="card-img" width="40px" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">${cardTitle}</h5>
-            <p class="card-price">${cardPrice}</p>
-            <a href="#" class="card-btn addToCart">Añadir al Carrito</a>
+const cardsProducto = [productoA,productoB,productoC]
+let lista = document.getElementById('lista')
+for(const i of cardsProducto){
+    let articulo = document.createElement('div')
+        articulo.innerHTML =  `
+        <div class="container" id="lista-productos">
+            <div class="row">
+            <div class="col-md-4 p-3">
+            <img src="${i.img}" alt="">
+            <h2>${i.title}</h2>
+            <p>${i.price}</p>
+            <button class="agregarCarrito" data-id="${i.id}">Añadir al Carrito</button>
             </div>
-        </div>
+            </div>
         </div>`
-    shoppingCard.innerHTML = visual
-    conteinerCol.appendChild(shoppingCard)
-shoppinTotal();
-}
 
-function shoppinTotal(){
-    let totla = 0;
-    const cartTotal = document.querySelector('.cartTotal')
-    const cards = document.querySelectorAll('.cards')
-}*/
+    lista.appendChild(articulo)
+}
