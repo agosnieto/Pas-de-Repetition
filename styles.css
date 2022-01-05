@@ -4,11 +4,11 @@ header {
 }
 
 header h1 {
-  color: black;
+  color: white;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 body main .container {
@@ -16,11 +16,11 @@ body main .container {
 }
 
 body main .container h3 {
-  color: black;
+  color: white;
 }
 
 body main .container p {
-  color: black;
+  color: white;
 }
 
 img {

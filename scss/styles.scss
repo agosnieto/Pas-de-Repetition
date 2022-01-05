@@ -1,6 +1,30 @@
+
+header{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    h1{
+        color:black;
+    }
+}
+body{
+    background-color:whitesmoke;
+    main{  
+        .container{
+            margin-top: 50px;
+        h3{
+        color:black;
+        }
+        p{
+            color:black;
+        }    
+    }
+    }
+}
+
+
 img{
-    width: 150px;
-    height:300px;
+    width: 100px;
+    height:200px;
 }
 
 .deleteElement{
@@ -25,4 +49,12 @@ img{
 .agregarCarrito{
     background-color: navy;
     color: white;
+    width: 150px;
+}
+#lista{
+    display: grid;
+    grid-template-rows: 300px 1fr 3fr 3fr;
+    grid-template-columns: 3fr 300px 300px 3fr;
+    align-items: center;
+    justify-content: space-evenly;
 }
