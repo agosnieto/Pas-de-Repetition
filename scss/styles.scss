@@ -1,14 +1,7 @@
 
-header{
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    h1{
-        color:black;
-    }
-}
 body{
     background-color:whitesmoke;
-    main{  
+    main{
         .container{
             margin-top: 50px;
         h3{
@@ -16,45 +9,47 @@ body{
         }
         p{
             color:black;
-        }    
+            }
     }
     }
 }
 
-
-img{
-    width: 100px;
-    height:200px;
+.col{
+    margin-top: 10px;
+}
+h3{
+    text-align: center;
+    text-decoration:none;
+}
+h2{
+    text-align: justify;
+}
+.precio{
+    text-align: center;
+    color: red;
 }
 
-.deleteElement{
-    background-color: red;
-    display: block;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-}
-
-#vaciar-carrito{
-    background-color: red;
-    color: white;
-    font-weight: 500;
-}
-#procesar-carrito{
-    background-color: green;
-    color: white;
-    font-weight: 500;
-}
-
-.agregarCarrito{
+.addCarrito{
     background-color: navy;
     color: white;
     width: 150px;
+    padding:5px;
+}
+
+
+.row{
+    width: 100%;
+    height: 75%;
 }
 #lista{
     display: grid;
-    grid-template-rows: 300px 1fr 3fr 3fr;
-    grid-template-columns: 3fr 300px 300px 3fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+   
+}
+.titulos{
+    width: 100%;
+    white-space: pre;
 }
