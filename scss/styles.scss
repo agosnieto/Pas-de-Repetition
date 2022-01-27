@@ -1,14 +1,17 @@
 
 body{
-    background-color:whitesmoke;
+
+ background-color: black;
+  
     main{
         .container{
             margin-top: 50px;
+       
         h3{
         color:black;
         }
         p{
-            color:black;
+            color:white;
             }
     }
     }
@@ -23,6 +26,19 @@ h3{
 }
 h2{
     text-align: justify;
+    color: white;
+}
+h4{
+    color: white;
+}
+h6{
+    color: white;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #6f4c20;
+    font-weight: 600;
 }
 .precio{
     text-align: center;
@@ -52,4 +68,8 @@ h2{
 .titulos{
     width: 100%;
     white-space: pre;
+}
+
+img{
+    width: 100px;
 }

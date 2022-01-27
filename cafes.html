@@ -7,54 +7,45 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="./imagenes/logo1.png" width="50px" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Categorias</title>
+  <title>Cafés</title>
 </head>
 <body>
   <header>
     <h1 style="padding: 10px; text-align: center">El Caldero Chorreante</h1>
     <nav>
-        <ul class="nav justify-content-center bg-dark">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="categorias.html">CATEGORIAS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="promociones.html">PROMOCIONES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="novedades.html" tabindex="-1" aria-disabled="true">NOVEDADES</a>
-            </li>
-        </ul>
-    </nav>
-  </header>
+      <ul class="nav justify-content-center" style="background-color:#6f4c20;">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: #c9a22b;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cafes.html" style="color: #c9a22b;">CAFES</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="promociones.html" style="color: #c9a22b;">PROMOCIONES</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="novedades.html" style="color: #c9a22b;">NOVEDADES</a>
+          </li>
+      </ul>
+  </nav>
+
+  
   <main>
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">
-          <a value= "fantasia" onclick="categorias()" href="fantasia.html"><h3>Fantasía</h3><img src="imagenes/fantasia.svg" class="img-fluid" width="" alt="..."></a>
-        </div>
-        <div class="col">
-          <a value= "emprendedores" onclick="categorias()" href="emprendedores.html"><h3>Deasarrollo Personal</h3><img src="imagenes/emprendedor.svg" class="img-fluid" width="" alt="..."></a>
-        </div>
-        <div class="col">
-          <a value= "ciencia-ficcion" onclick="categorias()" href="ciencia-ficcion.html"><h3>Ciencia Ficción</h3><img src="imagenes/ciencia-ficcion.svg" class="img-fluid" width="" alt="..."></a>
-        </div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col">
-          <a  value= "inteligencia" onclick="categorias()" href="inteligencia.html"><h3>Inteligencia Emocional</h3><img src="imagenes/inteligencia.svg" class="img-fluid" width="" alt="..."></a>
-        </div>
-        <div class="col">
-          <a value= "novelas" onclick="categorias()" href="novelas.html"><h3>Novelas</h3></a><img src="imagenes/novelas.svg" class="img-fluid" width="" alt="...">
-        </div>
-        <div class="col">
-          <a value= "colecciones" onclick="categorias()" href="colecciones.html"><h3>Colecciones</h3><img src="imagenes/colecciones.svg" class="img-fluid" width="" alt="..."></a>
-        </div>
-      </div>
+    <div id="muestra" class="col=md-8"> 
+
     </div>
+    <aside  class="col-md-4">
+      <ul id="carrito" class="lista-grupo"></ul>
+      <h2>Carrito</h2>
+      <hr>
+        <p>Total: <span id="total"></span></p>
+        <button id="vaciar-carrito" class="btn, btn-danger">VACIAR</button>
+        <button><a href="pago.html">PAGAR</a></button>
+        
+    </aside>
   </main>
+       
+ 
   <footer class="bg-dark text-center text-white" style="margin-top: 20px;">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -101,6 +92,8 @@
     </div>
     <!-- Copyright -->
   </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="js/main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
      
 </body>
