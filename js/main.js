@@ -24,29 +24,28 @@ const productos=[
     origin:"Tanzania",
     taste:"una acidez más brillante, cuerpo medio y notas de azúcar moreno y sutiles notas frutales",
     price:600,
-    imagen:"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    imagen:"https://cafemalist.com/wp-content/uploads/2020/03/Tanzanian-benas-228x300.png"
     },
 {   id: 4,
     name:"Sumatra Asados Oscuros de Indonesia",
     origin:"Sumatra,Indonesia",
     taste:"menor acidez con un cuerpo dulce y suave",
     price:620,
-    imagen:"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    imagen:"https://cafemalist.com/wp-content/uploads/2020/03/Bolsas-de-caf%C3%A9-Sumatra.jpg"
     },
 {   id: 5,
     name:"Sulawesi Toraja de Indonesia",
     origin:"Sulawesi, Indonesia",
     taste:"muy dulce y complejo, con baja acidez, cuerpo completo y algunas notas terrosas y herbales..",
     price:670,
-    imagen:"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    imagen:"https://www.lajoyadelcafe.com/wp-content/uploads/2018/05/caf%C3%A9-de-sulawesi8.jpg"
     },
 {   id: 6,
     name:"Geisha Centroamericanos",
     origin:"América Central",
     taste:"cuerpo similar al té natural, sabores brillantes como cítricos, mango, durazno y jazmín",
     price:500,
-    imagen:"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
-    }
+    imagen:"https://rceni.com/wp-content/uploads/2018/05/image-2018-05-28-1-1.jpg"}
 ]
 
 let carrito=[]
@@ -61,23 +60,23 @@ function renderizarProductos() {
     for (const cafes of productos) {
         //Cuerpo principal
         let cards =  document.createElement('div')
-        cards.classList.add('col-md-4')
+        cards.classList.add('card','col-md-4')
         //Boton
         const button = document.createElement('button')
         button.classList.add('btn','btn-primary')
         button.textContent = "Agregar al Carrito"
-        button.setAttribute('identificador', cafes.id);
+        button.setAttribute('id', cafes.id);
         button.addEventListener('click', addCarrito);
         // Cards
 
         let cardsBody = document.createElement('div')
         cardsBody.classList.add('card-body')
         cardsBody.innerHTML = `
-        <img src="${cafes.imagen}" class="" alt="">
-        <h4>Nombre:${cafes.name}<h4>
-        <h6>Origen:${cafes.origin}<h6>
-        <p>Sabor:${cafes.taste}<p>
-        <p>Precio:${divisa}${cafes.price}<p>
+        <img src="${cafes.imagen}" class= "imgCarrito" alt="">
+        <h4 class="card-title">Nombre:${cafes.name}<h4>
+        <h6 class="card-title">Origen:${cafes.origin}<h6>
+        <p class="card-text">Sabor:${cafes.taste}<p>
+        <p class="card-text">Precio:${divisa}${cafes.price}<p>
         `
         cardsBody.appendChild(button);
         muestraDOM.appendChild(cardsBody);
@@ -85,7 +84,7 @@ function renderizarProductos() {
 }
 
 function addCarrito(e){
-    carrito.push(e.target.getAttributte('identificador'));
+    carrito.push(e.target.getAttributte('id'));
     renderizarCarrito();
     saveLocalStorage();
 }
@@ -147,7 +146,6 @@ function calcularTotal(){
 function vaciarCarrito(){
     carrito = [];
     renderizarCarrito();
-    localStorage.clear();
 }
 
 botonVaciarDOM.addEventListener('click',vaciarCarrito);
