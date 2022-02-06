@@ -1,23 +1,36 @@
 body {
-  background-color: black;
+  background-color: white;
 }
 
 body main .container {
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .container h3 {
-  color: black;
+  color: white;
 }
 
 body main .container p {
-  color: white;
+  color: black;
   position: absolute;
 }
 
 .imgFondo {
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin-left: 680px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .imgCarrito {
@@ -31,24 +44,25 @@ body main .container p {
 h3 {
   text-align: center;
   text-decoration: none;
+  color: white;
 }
 
 h2 {
   text-align: justify;
-  color: white;
+  color: black;
 }
 
 h4 {
-  color: white;
+  color: black;
 }
 
 h6 {
-  color: white;
+  color: black;
 }
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  color: white;
+  color: black;
   font-weight: 600;
 }
 
@@ -66,5 +80,83 @@ h1 {
   color: white;
   width: 100%;
   white-space: pre;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-circle {
+  border-radius: 20px;
+  width: 30px;
+}
+
+@media (max-widht: 992px) {
+  body header .letras2 {
+    font-size: 25px;
+  }
+  body header #logo {
+    display: block;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .letras {
+    font-size: 30px;
+  }
+  body main #consejosImg {
+    width: 50px;
+    height: 150px;
+  }
+}
+
+@media (max-widht: 768px) {
+  body header .letras2 {
+    font-size: 50px;
+  }
+  body header #logo {
+    display: block;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header main .letras {
+    font-size: 35px;
+  }
+  body header main #consejosImg {
+    width: 50px;
+    height: 150px;
+  }
+  body header main form {
+    width: 80px;
+  }
+}
+
+@media (max-widht: 576px) {
+  body header .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #logo {
+    display: block;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .letras {
+    font-size: 20px;
+  }
+  main #consejosImg {
+    width: 50px;
+    height: 150px;
+  }
+  main form {
+    width: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

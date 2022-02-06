@@ -1,23 +1,28 @@
 
 body{
-    background-color: black;
+    background-color: white;
 
     main{
         .container{
-            margin-top: 50px;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content:center;
         h3{
-        color:black;
+        color:white;
         }
         p{
-            color:white;
+            color:black;
             position: absolute;
             }
     }
     }
 }
+
 .imgFondo{
-   margin-left: auto;
-   margin-right: auto;
+   display: block;
+   margin-left: 680px;
+   position: sticky;
 
 }
 .imgCarrito{
@@ -29,20 +34,21 @@ body{
 h3{
     text-align: center;
     text-decoration:none;
+    color: white;
 }
 h2{
     text-align: justify;
-    color: white;
+    color: black;
 }
 h4{
-    color: white;
+    color: black;
 }
 h6{
-    color: white;
+    color: black;
 }
 h1{
     font-family:'Times New Roman', Times, serif ;
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
@@ -59,3 +65,90 @@ h1{
     width: 100%;
     white-space: pre;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-circle{
+    border-radius: 20px;
+    width: 30px;
+}
+
+@media (max-widht: 992px){
+    body{
+        header{
+            .letras2{
+                font-size: 25px;
+            }
+            #logo{
+                display: block;
+                margin: auto;
+                justify-content: center;
+            }
+        }
+        main{
+            .letras{
+                font-size: 30px;
+            }
+            #consejosImg{
+                width: 50px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media (max-widht: 768px){
+    body{
+        header{
+            .letras2{
+                font-size: 50px;
+            }
+            #logo{
+                display: block;
+                margin: auto;
+                justify-content: center;
+            }
+        main{
+            .letras{
+                font-size: 35px;
+            }
+            #consejosImg{
+                width: 50px;
+                height: 150px;
+            }
+            form {
+                width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-widht: 576px){
+    body{
+        header{
+            .nav{
+                justify-content: center;
+            }
+            }
+            #logo{
+                display: block;
+                margin: auto;
+                justify-content: center;
+            }
+        }
+        main{
+            .letras{
+            font-size: 20px;
+            }
+            #consejosImg{
+                width: 50px;
+                height: 150px;
+            }
+            form{
+                width:40px;
+            }
+        }
+    }

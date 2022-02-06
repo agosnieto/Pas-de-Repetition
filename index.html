@@ -13,9 +13,15 @@
 </head>
 <body>
     <header>
+
         <h1 style="padding: 10px; text-align: center">Pas de Répétition</h1>
-        <nav>
-            <ul class="nav justify-content-center bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" >
+              <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html" style="color: #c9a22b;">HOME</a>
                 </li>
@@ -23,43 +29,30 @@
                     <a class="nav-link" href="cafes.html" style="color:wheat">CAFES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="promociones.html " style="color: #c9a22b;">PROMOCIONES</a>
+                    <a class="nav-link" href="novedades.html " style="color: #c9a22b;">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="novedades.html"  style="color: wheat;">NOVEDADES</a>
+                    <a class="nav-link active" href="nosotros.html"  style="color: wheat;">NOSOTROS</a>
                 </li>
+                <li class="nav-item">
+                  <button onclick='
+                  saludar()'>Saludar</button>
+              </li>
             </ul>
+            </div>
+          </div>
         </nav>
     <main>
-    <div class="container"  id="muestra" style="padding: 10px; margin-left:25px">
-        <div>
-          <img src="imagenes/cafe132.jpg" width="500px" class="animate__animated animate__backInRight" alt="">
-          <p>El café es una infusión caliente que se consume en varios países de occidente. Su nombre deriva de un árbol: la planta cafeto cuyo grano es el que se utiliza para la realización de dicha infusión.</p>
-        </div>
-        <br>
-        <br>
-        <div>
-          <img src="imagenes/cafe11.jpg" class="animate__animated animate__backInLeft" width="300px" alt="">
-          <li class="li-datos">Café express o expreso. Es el café común, preparado con granos de café molido y agua caliente.</li>
-          <li class="li-datos">Café cortado. Se prepara con café y con un poco de leche (descremada o entera)</li>
-          <li class="li-datos">Café latte. Se prepara con 1/3 de café expreso y 2/3 de leche.</li>
-          <li class="li-datos">Café americano. Café expreso con más agua.</li>
-          <li class="li-datos">Es el café expreso, agua y espuma de leche</li>
-          <li class="li-datos">Es un café expreso, agua, espuma de leche y chocolate rallado.</li>
-        </div>
-        <br>
-        <br>
-        <div>
-          <img src="imagenes/cafe922.jpg" class="animate__animated animate__backInRight" width="300px" alt="">
-          <li class="li-datos">Aumenta los niveles de concentración y de atención</li>
-          <li class="li-datos">Mejora el rendimiento físico</li>
-          <li class="li-datos">Produce saciedad y no aporta cantidades importante de calorías (siempre y cuando se lo consuma sin otras infusiones calientes)</li>
-          <li class="li-datos">Potencia el efecto de los analgésicos</li>
-          <li class="li-datos">Es anticancerígeno</li>
-          <li class="li-datos">Previene la diabetes de tipo II y el mal de Alzheimer</li>
-          <li class="li-datos">Favorece la digestión</li>
-        </div>
+    <div id="muestra" style="padding: 10px; margin-left:25px">
+
+      <a href="nosotros.html"><img src="imagenes/medusaCafe.svg" width="300px" class="imgFondo" alt=""></a>
+
+      <div class="container">
+        <a href="cafes.html"><h4>CAFES</h4><img src="imagenes/cafe132.jpg" width="500px" class="animate__animated animate__backInRight" alt=""></a>
+        <a href="novedades.html"><h4>NOVEDADES</h4><img src="imagenes/cafe6.jpg" class="animate__animated animate__backInRight" width="300px" alt=""></a>
+      </div>
     </div>
+
     </main>
     <footer class="bg-dark text-center text-white" style="margin-top: 200px;">
         <!-- Grid container -->
