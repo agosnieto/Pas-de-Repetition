@@ -23,7 +23,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html" style="color: #c9a22b;">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cafes.html" style="color:wheat">CAFES</a>
+                <a class="nav-link" id="cafes" href="cafes.html" style="color:wheat">CAFES</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="promociones.html " style="color: #c9a22b;">PROMOCIONES</a>
@@ -35,8 +35,8 @@
         </div>
       </div>
     </nav>
-  <main>
-    <div id="muestra" class="col=md-8">
+    <main>
+    <div id="muestra">
     </div>
     <aside  class="col-md-4">
       <ul id="carrito" class="lista-grupo"></ul>
@@ -44,11 +44,9 @@
       <hr>
         <p>Total: <span id="total"></span></p>
         <button id="vaciar-carrito" class="btn, btn-danger">VACIAR</button>
-        <a href="pago.html"><button class="btn, btn-success">PAGAR</button></a>
+        <a href="pago.html"><button class="btn, btn-success" id="pagar-carrito">PAGAR</button></a>
     </aside>
   </main>
-       
- 
   <footer class="bg-dark text-center text-white" style="margin-top: 20px;">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
