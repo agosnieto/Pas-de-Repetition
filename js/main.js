@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     const myLocalStorage = window.localStorage;
 
     const URLGET = './datos.json'
-    $('body').prepend('<button id="cafes">Mostrar Productos</button>')
+    $('body').prepend('<button id="cafes" warning>Mostrar Productos</button>')
     $("#cafes").click(() => {
     $.get(URLGET, function (respuesta, estado) {
     if(estado === "success"){
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded',() =>{
     });
     function renderizarProductos() {
         misDatos.forEach((cafes)=>{
-    let cards =  document.createElement('div')
-    cards.classList.add('card','col-md-4')
+            let cards =  document.createElement('div')
+            cards.classList.add('card','col-md-4')
     
     const button = document.createElement('button')
     button.classList.add('btn','btn-primary')
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     }
     function calcularTotal(){
         return carrito.reduce((total, item)=>{
-        const myItem = baseDeDatos.filter((itemProductos)=>{
+        const myItem = misDatos.filter((itemProductos)=>{
             return itemProductos.id == parseInt(item);
         });
         return total + myItem[0].price;

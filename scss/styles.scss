@@ -76,83 +76,11 @@ a{
 }
 #404img{
     display: block;
-    margin:auto;
+    margin:auto;}
 
-}
-@media (max-widht: 992px){
-    body{
-        header{
-            .letras2{
-                font-size: 25px;
-            }
-            #logo{
-                display: block;
-                margin: auto;
-                justify-content: center;
-            }
-        }
-        main{
-            .letras{
-                font-size: 30px;
-            }
-            #consejosImg{
-                width: 50px;
-                height: 150px;
-            }
-        }
-    }
+#cafes{
+    margin-top:50px;
+    border-radius:5px;
+    background-color:brown;
 }
 
-@media (max-widht: 768px){
-    body{
-        header{
-            .letras2{
-                font-size: 50px;
-            }
-            #logo{
-                display: block;
-                margin: auto;
-                justify-content: center;
-            }
-        main{
-            .letras{
-                font-size: 35px;
-            }
-            #consejosImg{
-                width: 50px;
-                height: 150px;
-            }
-            form {
-                width: 80px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-widht: 576px){
-    body{
-        header{
-            .nav{
-                justify-content: center;
-            }
-            }
-            #logo{
-                display: block;
-                margin: auto;
-                justify-content: center;
-            }
-        }
-        main{
-            .letras{
-            font-size: 20px;
-            }
-            #consejosImg{
-                width: 50px;
-                height: 150px;
-            }
-            form{
-                width:40px;
-            }
-        }
-    }

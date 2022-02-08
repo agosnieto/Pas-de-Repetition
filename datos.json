@@ -9,7 +9,7 @@
     "name":"Blue Mountain",
     "origin":"Jamaica",
     "taste":"Hierbas dulces y florales, con matices de frutos secos.",
-    "price":800,
+    "price":870,
     "imagen":"https://m.media-amazon.com/images/I/71gmxuqAwrL._SY879_.jpg"},
 {"id": 2,
     "name":"Kenia AA",
@@ -22,28 +22,28 @@
     "name":"Guisante de Tanzania",
     "origin":"Tanzania",
     "taste":"una acidez más brillante, cuerpo medio y notas de azúcar moreno y sutiles notas frutales",
-    "price":600,
-    "imagen":"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    "price":1200,
+    "imagen":"https://cafemalist.com/wp-content/uploads/2020/03/Tanzanian-benas-228x300.png"
     },
 {"id": 4,
     "name":"Sumatra Asados Oscuros de Indonesia",
     "origin":"Sumatra,Indonesia",
     "taste":"menor acidez con un cuerpo dulce y suave",
     "price":620,
-    "imagen":"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    "imagen":"https://media.diariouno.com.ar/p/adc1e82f8868aa57e463975458629302/adjuntos/298/imagenes/008/819/0008819352/1200x0/smart/granos-sumatra-asados-oscuros-de-indonesiajpg.jpg"
     },
 {"id": 5,
     "name":"Sulawesi Toraja de Indonesia",
     "origin":"Sulawesi, Indonesia",
     "taste":"muy dulce y complejo, con baja acidez, cuerpo completo y algunas notas terrosas y herbales..",
     "price":670,
-    "imagen":"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    "imagen":"https://www.lajoyadelcafe.com/wp-content/uploads/2018/05/caf%C3%A9-de-sulawesi8.jpg"
     },
 {"id": 6,
     "name":"Geisha Centroamericanos",
     "origin":"América Central",
     "taste":"cuerpo similar al té natural, sabores brillantes como cítricos, mango, durazno y jazmín",
-    "price":500,
-    "imagen":"https://www.penguinlibros.com/es/1247558/harry-potter-y-la-piedra-filosofal-edicion-slytherin-del-20-aniversario-harry-potter-1.jpg"
+    "price":545,
+    "imagen":"https://media.diariouno.com.ar/p/d9d668c4935d3a2dee8b2c531d7b2d94/adjuntos/298/imagenes/008/819/0008819360/1200x900/smart/granos-de-cafe-geisha-centroamericanosjpg.jpg"
     }
 ]
