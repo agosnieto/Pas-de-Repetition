@@ -105,17 +105,6 @@ document.addEventListener('DOMContentLoaded',() =>{
         },0)
     }
     
-    function payCarrito(){
-        if(myLocalStorage.getItem('carrito') == null){
-            botonPagarDOM.addEventListener('click',Swal.fire({
-                icon: 'info',
-                title: 'Oops...',
-                text: 'Debe añadir algún producto para poder proceguir con la compra!',
-                footer: '<a href="">Why do I have this issue?</a>'
-              }))
-        }
-    }
-    
     function vaciarCarrito(){
         carrito = [];
         renderizarCarrito();
@@ -124,7 +113,6 @@ document.addEventListener('DOMContentLoaded',() =>{
     
     loadLocalStorage();
     renderizarCarrito();
-    payCarrito();
 } )
 
 
